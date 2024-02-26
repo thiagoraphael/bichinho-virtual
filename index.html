@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon"/>
+    <script type="text/javascript" src="Tamagochi.js"></script>
+    <title>Tamagochi</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a> <img src="img/logo.svg" id="icon"> </a>
+        <ul class="menu">
+            <li> <a class="menu-texto" href="" onclick="reiniciar()">Reiniciar</a> </li>
+            <li> <a class="menu-texto" href="https://github.com/thiagoraphael" target="_blank">Projeto no Github</a> </li>
+        </ul>
+    </header>
+    <main class="conteudo">
+        <h1>Status</h1>
+        <div class="escolherNome">
+            <input id="nome" type="text" placeholder="Digite o nome aqui">
+            <input id="escolher" type="submit" value="Escolher" onclick="mudarNome()">
+        </div>
+        <div class="status-visual">
+            <div> 
+                <p class="status-visual-texto">Felicidade</p> 
+                <p id="felicidade"></p>
+            </div>
+            <div> 
+                <p class="status-visual-texto">Fome</p>
+                <p id="fome"></p> 
+            </div>
+            <div> 
+                <p class="status-visual-texto">Vida</p>
+                <p id="vida"></p> 
+            </div>            
+            <div> 
+                <p class="status-visual-texto" id="emoji">😸</p> 
+            </div>
+        </div>
+        <div>
+            <img src="img/tamagochi_1.gif" id="tamagochi">
+        </div>
+        <div class="botoes">
+            <button class="atv-botao" id="alimentar" onclick="alimentar()">Alimentar</button>
+            <button class="atv-botao" id="passear" onclick="passear()">Passear</button>
+            <button class="atv-botao" id="brincar" onclick="brincar()">Brincar</button>
+            <button class="atv-botao" id="trocarRoupa" onclick="trocarEmoji()">Trocar Emoji</button>
+        </div>        
+    </main>
+</body>
+</html>
